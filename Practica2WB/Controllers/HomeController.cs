@@ -13,17 +13,18 @@ namespace Practica2WB.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult RegistrarVendedor()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult RegistrarVehiculo()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult ConsultaVehiculo()
+        {
             return View();
         }
     }
