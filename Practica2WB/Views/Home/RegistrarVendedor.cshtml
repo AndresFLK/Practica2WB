@@ -1,8 +1,46 @@
-﻿
+﻿@model Practica2WB.Entities.VendedorEnt
 @{
     ViewBag.Title = "RegistrarVendedor";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>RegistrarVendedor</h2>
+<div class="main-panel">
+            <div class="col-md-6 m-auto stretch-card">
+                <div class="card" style="background-color:#D8E3FF">
+                    <div class="card-body">
+                        <h4 class="card-title">Registro de Vendedores</h4>
+                        <p class="card-description">Ingrese la informacion del vendedor que desea agregar</p>
 
+                        @if (ViewBag.MensajeUsuario != null)
+                        {
+                            <div class="alert alert-info" role="alert" style="text-align:center">
+                                @ViewBag.MensajeUsuario
+                            </div>
+                        }
+
+                        @using (Html.BeginForm("RegistrarVendedor", "Home", new { @class = "forms-sample" }))
+                        {
+                            <div class="form-group">
+                                <label for="exampleInputUsername1">Cedula</label>
+                                @Html.TextBoxFor(m => m.Cedula, new { @class = "form-control", @placeholder = "Cedula", @type = "text" })
+
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Nombre</label>
+                                @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", @placeholder = "Nombre", @type = "text" })
+
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Correo Electronico</label>
+                                @Html.TextBoxFor(m => m.Correo, new { @class = "form-control", @placeholder = "Correo Electronico", @type = "email" })
+
+                            </div>
+                            <div class="m-auto" style="text-align:center">
+                                <input type="submit" class="btn btn-primary m-auto" value="Registrarse">
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+       
+</div>

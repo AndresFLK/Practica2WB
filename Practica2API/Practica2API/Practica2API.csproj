@@ -165,6 +165,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Entities\ConsultaEntitie.cs" />
     <Compile Include="Entities\VehiculoEnt.cs" />
     <Compile Include="Entities\VendedorEnt.cs" />
     <Compile Include="Global.asax.cs">

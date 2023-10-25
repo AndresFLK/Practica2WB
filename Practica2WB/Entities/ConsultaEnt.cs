@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Practica2API.Entities
+namespace Practica2WB.Entities
 {
-    public class VehiculoEnt
+    public class ConsultaEnt
     {
-        public long IdVehiculo { get; set; }
-
         public string Marca { get; set; }
 
         public string Modelo { get; set; }
 
-        public string Color { get; set; }
-
         public decimal Precio { get; set; }
 
-        public long IdVendedor { get; set; }
+        public string Cedula { get; set; }
 
+        public string Nombre { get; set; }
     }
 }
